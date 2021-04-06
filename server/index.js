@@ -7,8 +7,6 @@ const FriendModel = require("./models/Friends");
 app.use(cors());
 app.use(express.json());
 
-const PORT = 3001;
-
 mongoose.connect(
   "mongodb+srv://admin:admin@cluster0.hxzte.mongodb.net/test?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true }

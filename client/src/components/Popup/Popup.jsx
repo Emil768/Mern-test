@@ -23,7 +23,7 @@ function Popup({ name, _id }) {
 
   const handlerUpdateName = () => {
     const newName = prompt("Введите новое имя:");
-    axios.put("http://localhost:3001/update", {
+    axios.put("https://mern-test228.herokuapp.com/update", {
       newName,
       _id,
     });
@@ -32,7 +32,7 @@ function Popup({ name, _id }) {
   const handlerDelete = () => {
     const question = window.confirm("Вы действительно хотите удалить друга?");
     if (question) {
-      axios.delete(`http://localhost:3001/delete/${_id}`);
+      axios.delete(`https://mern-test228.herokuapp.com/delete/${_id}`);
     }
   };
 

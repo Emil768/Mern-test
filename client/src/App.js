@@ -25,7 +25,7 @@ function App() {
   };
 
   const handlerAddFriend = () => {
-    axios.post("http://localhost:3001/insert", {
+    axios.post("https://mern-test228.herokuapp.com/insert", {
       name,
       age,
       image,
@@ -33,7 +33,9 @@ function App() {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:3001/read").then((res) => setData(res.data));
+    axios
+      .get("https://mern-test228.herokuapp.com/read")
+      .then((res) => setData(res.data));
   }, []);
 
   return (
