@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.App__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.App__content input {
+  display: block;
+  width: 300px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  box-shadow: 0 0 7px rgb(0 0 0 / 15%);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.App__content input:focus {
+  border-color: #40b0ee;
+}
+
+.App__content button {
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 7px rgb(0 0 0 / 15%);
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+.App__content button:focus {
+  border-color: #40b0ee;
+  color: #40b0ee;
+}
